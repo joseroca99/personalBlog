@@ -1,0 +1,60 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+.techfont{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.bigbrand{
+    font-size: 1.5em;
+}   
+
+.centerstage{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.postdate{
+  text-align: center;
+}
+
+.posttitle{
+  font-family: 'Roboto', sans-serif;
+  font-size: 3em;
+  text-align: center;
+}
+
+.postcontent{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+}
+
+/*Cubitos locos*/
+
+body {
+  margin: 0;
+  padding: 0;
+  place-items: center;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+.containerSpecial {
+  display: grid;
+  height: 100%;
+  background:white ;
+  display: grid;
+  grid-template-columns: repeat(10, 2vw);
+  gap: 0px;
+  margin-left: 40vw;
+}
+
+.rect {
+  background: #000;
+  border-radius: 10px;
+  width: 2vw;
+  height: 2vw;
+  display: block;
+  position: relative;
+}
+

@@ -1,0 +1,23 @@
+{%extends 'blog_one/base.html'%}
+{%block content%}
+<div class="p-5 mb-4 bg-light rounded-3">
+    <div class="container-fluid py-5">
+      <h1 class="display-5 fw-bold">Please Login:</h1>
+      <h3 class="display-4 fw-bol">(Must be SuperUser, please check with the site admin)</h3>
+
+      {%if form.errors%}
+      <p>Your username and password didn't match! Please try again.</p>
+      {%endif%}
+
+      <form action="{%url 'login'%}" method="POST">
+        {%csrf_token%}
+        {{form.as_p}}
+        
+            <input type="submit" class="btn btn-primary" value="Login">
+            <input type="hidden" name="next" value="{{next}}">
+      </form>
+
+    </div>
+</div>
+
+{%endblock%}
